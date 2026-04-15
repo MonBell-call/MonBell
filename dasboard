@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MonBell – Dashboard</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.cdnfonts.com/css/plus-jakarta-sans" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/be-vietnam-pro" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Be Vietnam Pro", sans-serif;
+      background: #fff5f7;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col relative overflow-hidden">
+
+  <!-- Header -->
+  <header class="w-full bg-white border-b border-pink-200 py-4 px-4">
+    <div class="flex items-center justify-between max-w-md mx-auto">
+      <h1 class="text-2xl font-bold text-pink-700">MonBell</h1>
+      <div class="text-xs text-pink-400">Dashboard</div>
+    </div>
+  </header>
+
+  <!-- Stiker background -->
+  <div class="absolute inset-0 pointer-events-none">
+    <img src="https://placehold.co/36x36/ff6b9d/ffffff?text=🐱" alt="sticker cat" class="absolute top-16 left-10 animate-pulse" />
+    <img src="https://placehold.co/32x32/81c784/white?text=$" alt="money sticker" class="absolute top-28 right-12 animate-bounce" />
+    <img src="https://placehold.co/36x36/ff6b9d/ffffff?text=🐱" alt="sticker cat" class="absolute bottom-10 left-6 animate-pulse" />
+    <img src="https://placehold.co/32x32/81c784/white?text=$" alt="money sticker" class="absolute bottom-24 right-8 animate-bounce" />
+  </div>
+
+  <main class="flex-1 px-4 pt-6 pb-20 max-w-md mx-auto">
+
+    <!-- Progress pengeluaran -->
+    <div class="space-y-3 mb-6">
+      <h2 class="text-sm font-semibold text-gray-700">Pengingat Pengeluaran</h2>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="bg-pink-50 rounded-2xl p-3 border border-pink-200 text-center">
+          <p class="text-xs text-gray-600">Harian</p>
+          <p class="text-lg font-bold text-gray-800">Rp40k</p>
+          <div class="h-1 w-full bg-pink-200 rounded-full mt-2">
+            <div class="bg-pink-500 h-1 rounded-full w-3/4"></div>
+          </div>
+        </div>
+        <div class="bg-pink-50 rounded-2xl p-3 border border-pink-200 text-center">
+          <p class="text-xs text-gray-600">Mingguan</p>
+          <p class="text-lg font-bold text-gray-800">Rp180k</p>
+          <div class="h-1 w-full bg-pink-200 rounded-full mt-2">
+            <div class="bg-pink-500 h-1 rounded-full w-1/2"></div>
+          </div>
+        </div>
+        <div class="bg-pink-50 rounded-2xl p-3 border border-pink-200 text-center">
+          <p class="text-xs text-gray-600">Bulanan</p>
+          <p class="text-lg font-bold text-gray-800">Rp600k</p>
+          <div class="h-1 w-full bg-pink-200 rounded-full mt-2">
+            <div class="bg-pink-500 h-1 rounded-full w-1/3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dompet Digital / Bank -->
+    <div class="mb-6">
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Dompet Digital / Bank</h2>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="bg-blue-50 rounded-2xl p-3 text-center border border-blue-200">
+          <span class="text-lg">💸</span>
+          <p class="text-xs text-blue-800 font-semibold">DANA</p>
+        </div>
+        <div class="bg-green-50 rounded-2xl p-3 text-center border border-green-200">
+          <span class="text-lg">💰</span>
+          <p class="text-xs text-green-800 font-semibold">GoPay</p>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-3 text-center border border-blue-200">
+          <span class="text-lg">💳</span>
+          <p class="text-xs text-blue-800 font-semibold">Seabank</p>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-3 text-center border border-blue-200">
+          <span class="text-lg">🏦</span>
+          <p class="text-xs text-blue-800 font-semibold">BRIMo</p>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-3 text-center border border-blue-200">
+          <span class="text-lg">💳</span>
+          <p class="text-xs text-blue-800 font-semibold">BCA</p>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-3 text-center border border-blue-200">
+          <span class="text-lg">💳</span>
+          <p class="text-xs text-blue-800 font-semibold">Mandiri</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabungan Bersama -->
+    <div class="mb-6">
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Tabungan Bersama</h2>
+      <div class="bg-pink-50 rounded-2xl p-4 border border-pink-200">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-full bg-pink-200 flex items-center justify-center text-sm">N</div>
+          <div>
+            <p class="text-sm font-semibold text-gray-800">Noverita Laoli</p>
+            <p class="text-xs text-gray-600">Ketua Tim</p>
+          </div>
+        </div>
+        <p class="text-xs text-gray-600 mb-2">Total tabungan bersama: Rp1.250.000</p>
+        <button
+          class="w-full py-2 rounded-full bg-pink-100 text-pink-800 text-xs font-semibold hover:bg-pink-200 transition-colors"
+        >
+          Tambah Tabungan Bersama
+        </button>
+      </div>
+    </div>
+
+    <!-- Pemilih Tema -->
+    <div class="mb-6">
+      <h2 class="text-sm font-semibold text-gray-700 mb-3">Pemilih Tema</h2>
+      <div class="grid grid-cols-3 gap-2">
+        <button class="text-xs text-gray-700 rounded-full bg-pink-100 py-2 px-4 hover:bg-pink-200 transition-colors">Sakura Bloom</button>
+        <button class="text-xs text-gray-700 rounded-full bg-green-100 py-2 px-4 hover:bg-green-200 transition-colors">Matcha Forest</button>
+        <button class="text-xs text-gray-700 rounded-full bg-yellow-100 py-2 px-4 hover:bg-yellow-200 transition-colors">Honey Lemon</button>
+        <button class="text-xs text-gray-700 rounded-full bg-gray-100 py-2 px-4 hover:bg-gray-200 transition-colors">Midnight Pro</button>
+        <button class="text-xs text-gray-700 rounded-full bg-white py-2 px-4 hover:bg-gray-50 border border-gray-200 transition-colors">Minimal Paper</button>
+        <button class="text-xs text-gray-700 rounded-full bg-gray-700 text-white py-2 px-4 hover:bg-gray-800 transition-colors">Slate</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <footer class="w-full bg-white border-t border-pink-200 py-2 px-4 fixed bottom-0 left-0 right-0">
+    <div class="flex justify-around max-w-md mx-auto text-xs text-gray-600">
+      <span class="flex flex-col items-center">
+        🏠<br>Home
+      </span>
+      <span class="flex flex-col items-center">
+        🤝<br>Support
+      </span>
+      <span class="flex flex-col items-center">
+        👤<br>Profile
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>
